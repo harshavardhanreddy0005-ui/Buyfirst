@@ -66,7 +66,7 @@ footer{padding:20px 0 90px;border-top:1px solid var(--b);margin-top:30px;font-si
 // Leave both empty to run in local-only mode (data stays in this browser).
 // The anon key is PUBLIC by design — your data is protected by the rules in supabase/schema.sql.
 // NEVER paste the "service_role" key here: anyone who opens the website could read it.
-const CLOUD={url:'',key:''};CLOUD.url=CLOUD.url.trim().replace(/\/+$/,'');
+const CLOUD={url:'https://raeqyjcgseygzvgswgog.supabase.co/rest/v1/',key:'sb_publishable_0Vr9A12WCk6KPdZZ8H9bqA_l4jRxA3X'};CLOUD.url=CLOUD.url.trim().replace(/\/+$/,'');
 let CL=!!(CLOUD.url&&CLOUD.key);
 try{if(CL&&JSON.parse(atob(CLOUD.key.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).role=='service_role'){CL=false;console.error('buyfirst: the service_role key must never be used in the website. Database disabled.')}}catch(_){}
 const $=i=>document.getElementById(i),v=i=>$(i)?$(i).value.trim():'',
